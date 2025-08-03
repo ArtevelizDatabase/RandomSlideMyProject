@@ -2,8 +2,16 @@ import streamlit as st
 import os
 import random
 import io
-from pptx import Presentation
 import copy
+
+# Try to import python-pptx with error handling
+try:
+    from pptx import Presentation
+except ImportError as e:
+    st.error("❌ Error: python-pptx package tidak dapat diimport!")
+    st.error(f"Detail error: {str(e)}")
+    st.error("Silakan pastikan requirements.txt berisi 'python-pptx>=0.6.21'")
+    st.stop()
 
 # Set page config at the very beginning
 st.set_page_config(page_title="SlideForge - PowerPoint Merger Pro", layout="wide")
