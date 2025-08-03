@@ -1,53 +1,28 @@
 # 🔥 SlideForge - PowerPoint Merger Pro
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-> **🚀 Aplikasi web profesional untuk menggabungkan slide PowerPoint dari multiple file menjadi satu presentasi yang sempurna!**
+> **🚀 Gabungkan slide PowerPoint dari multiple file menjadi satu presentasi sempurna!**
 
 ## 🌟 Demo Live
-
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://randomslidemyproject.streamlit.app)
 
-## 📋 Tentang SlideForge
-
-SlideForge adalah aplikasi web inovatif yang memungkinkan Anda untuk:
-- 🔗 Menggabungkan slide dari multiple file PowerPoint (.pptx)
-- 🎯 Memilih slide secara manual, random, atau range dengan preview
-- 👀 Preview slide sebelum digabungkan dengan detail lengkap
-- ⚙️ Mengatur ukuran slide output sesuai kebutuhan
-- 💾 Download hasil gabungan berkualitas tinggi
-
 ## ✨ Fitur Utama
+- 🔗 **Merge Multiple PowerPoint**: Gabungkan slide dari banyak file .pptx
+- 🎯 **Flexible Selection**: Pilih slide manual, random, atau range dengan preview
+- 👀 **Real-time Preview**: Lihat detail slide sebelum menggabungkan
+- ⚙️ **Custom Settings**: Atur ukuran slide output (16:9, 4:3, A4, Auto)
+- 💾 **High Quality Output**: Download hasil berkualitas tinggi
+- 📱 **Responsive Design**: Optimal di desktop dan mobile
 
-### 🔍 **Pemilihan Slide Fleksibel**
-- **Mode Manual**: Pilih slide spesifik yang Anda inginkan
-- **Mode Random**: Ambil slide secara acak dengan jumlah tertentu
-- **Mode Range**: Pilih rentang slide berurutan
-- **Preview Real-time**: Lihat informasi slide sebelum memilih
+## 🚀 Quick Start
 
-### 🎯 **Interface User-Friendly**
-- **Multi-file Upload**: Upload beberapa file sekaligus
-- **Progress Tracking**: Monitor proses penggabungan
-- **File Validation**: Validasi otomatis format dan ukuran file
-- **Responsive Design**: Tampilan optimal di desktop dan mobile
+### 1. Online (Recommended)
+Langsung pakai di: **https://randomslidemyproject.streamlit.app**
 
-### ⚙️ **Konfigurasi Lanjutan**
-- **Ukuran Slide**: 16:9 Widescreen, 4:3 Standard, A4, atau Auto
-- **Preserve Master Slides**: Pertahankan template asli
-- **Media Relationships**: Jaga konsistensi gambar dan media
-- **Clean Placeholder**: Hapus teks placeholder otomatis
-
-### 🚀 **Performa Optimal**
-- **Memory Efficient**: Proses file besar tanpa crash
-- **Error Handling**: Recovery otomatis dari error
-- **File Compression**: Output optimal size
-- **Cross-platform**: Berjalan di Windows, Mac, Linux
-
-## 🛠️ Instalasi Lokal
-
-### Prerequisites
+### 2. Local Setup
 - Python 3.8 atau lebih tinggi
 - pip (Python package manager)
 
@@ -74,11 +49,33 @@ SlideForge adalah aplikasi web inovatif yang memungkinkan Anda untuk:
    http://localhost:8501
    ```
 
-### Menggunakan Script (Linux/Mac)
 ```bash
-chmod +x run_app.sh
-./run_app.sh
+git clone https://github.com/ArtevelizDatabase/RandomSlideMyProject.git
+cd RandomSlideMyProject  
+pip install -r requirements.txt
+streamlit run slideforge_app.py
 ```
+
+## 📖 Cara Penggunaan
+
+1. **Upload Files** - Upload file PowerPoint (.pptx)
+2. **Pilih Slide** - Random, Manual, atau Range
+3. **Download Hasil** - Klik "Merge & Download"
+
+## 🛠️ Tech Stack
+- **Frontend**: Streamlit
+- **Backend**: Python  
+- **PowerPoint**: python-pptx
+- **Deploy**: Streamlit Cloud
+
+## 📝 License
+MIT License
+
+## 🤝 Contributing  
+Pull requests welcome!
+
+---
+**Made with ❤️ by ArtevelizDatabase**
 
 ## � Deploy ke Streamlit Cloud
 
