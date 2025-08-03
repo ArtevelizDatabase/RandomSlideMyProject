@@ -8,7 +8,7 @@
 
 ## 🌟 Demo Live
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://slideforge.streamlit.app)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://randomslidemyproject.streamlit.app)
 
 ## 📋 Tentang SlideForge
 
@@ -55,8 +55,8 @@ SlideForge adalah aplikasi web inovatif yang memungkinkan Anda untuk:
 
 1. **Clone repository**
    ```bash
-   git clone https://github.com/yourusername/slideforge.git
-   cd slideforge
+   git clone https://github.com/ArtevelizDatabase/RandomSlideMyProject.git
+   cd RandomSlideMyProject
    ```
 
 2. **Install dependencies**
@@ -173,9 +173,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## 👨‍💻 Author
 
 **SlideForge Team**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- Website: [slideforge.app](https://slideforge.streamlit.app)
+- GitHub: [@ArtevelizDatabase](https://github.com/ArtevelizDatabase)
+- Repository: [RandomSlideMyProject](https://github.com/ArtevelizDatabase/RandomSlideMyProject)
+- Website: [randomslidemyproject.streamlit.app](https://randomslidemyproject.streamlit.app)
 
 ## 🙏 Acknowledgments
 
@@ -187,8 +187,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Jika Anda mengalami masalah atau memiliki pertanyaan:
 
-1. Check [Issues](https://github.com/yourusername/slideforge/issues) yang sudah ada
-2. Buat [New Issue](https://github.com/yourusername/slideforge/issues/new) jika belum ada
+1. Check [Issues](https://github.com/ArtevelizDatabase/RandomSlideMyProject/issues) yang sudah ada
+2. Buat [New Issue](https://github.com/ArtevelizDatabase/RandomSlideMyProject/issues/new) jika belum ada
 3. Sertakan detail error dan screenshot jika memungkinkan
 
 ---
