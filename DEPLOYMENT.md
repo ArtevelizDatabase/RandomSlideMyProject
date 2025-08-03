@@ -1,4 +1,15 @@
-# Deployment Guide
+# 🚀 SlideForge - Deployment Guide (Updated)
+
+## ✅ Repository Status
+- **Repository**: https://github.com/ArtevelizDatabase/RandomSlideMyProject.git
+- **Main File**: `slideforge_app.py`
+- **Status**: Fixed dependencies and ready for deployment
+
+## 🔧 Recent Fixes Applied
+- ✅ Enhanced `requirements.txt` with all dependencies
+- ✅ Fixed `runtime.txt` format for Streamlit Cloud
+- ✅ Added `packages.txt` for system dependencies
+- ✅ Enhanced error handling in main app
 
 ## 🚀 Deploy ke Streamlit Cloud
 
@@ -9,22 +20,15 @@
 
 ### Step-by-Step Deployment:
 
-#### 1. Setup GitHub Repository
+#### 1. Setup GitHub Repository (Already Done!)
 ```bash
-# Initialize git (jika belum)
-git init
+# Repository sudah ready di:
+# https://github.com/ArtevelizDatabase/RandomSlideMyProject.git
 
-# Add semua file
+# Jika perlu update:
 git add .
-
-# Commit pertama
-git commit -m "Initial commit: PowerPoint Merger App"
-
-# Add remote origin (ganti dengan URL repo Anda)
-git remote add origin https://github.com/USERNAME/REPOSITORY-NAME.git
-
-# Push ke GitHub
-git push -u origin main
+git commit -m "Update SlideForge"
+git push
 ```
 
 #### 2. Deploy ke Streamlit Cloud
@@ -37,13 +41,14 @@ git push -u origin main
 2. **Create New App**
    - Klik tombol "New app"
    - Pilih "From existing repo"
-   - Pilih repository GitHub Anda
-   - Main file path: `app_streamlit.py`
+   - Repository: `ArtevelizDatabase/RandomSlideMyProject`
+   - Main file path: `slideforge_app.py`
    - Branch: `main` (default)
 
-3. **Advanced Settings (Optional)**
-   - Python version: `3.8` (sesuai runtime.txt)
-   - Custom requirements: sudah otomatis dari requirements.txt
+3. **Advanced Settings (IMPORTANT!)**
+   - Python version: `3.11` (sesuai runtime.txt yang sudah diperbaiki)
+   - Requirements akan otomatis terdeteksi dari requirements.txt
+   - Pastikan packages.txt juga terdeteksi untuk system dependencies
 
 4. **Deploy!**
    - Klik "Deploy!"
@@ -58,9 +63,44 @@ git push -u origin main
 
 ### 🔧 Troubleshooting Deployment
 
-#### Error: "Module not found"
-- Pastikan semua dependencies ada di `requirements.txt`
-- Check apakah ada typo dalam nama package
+#### Error: "No module named 'pptx'" (CURRENT ISSUE)
+
+**Root Cause**: Dependencies tidak terinstall dengan benar di Streamlit Cloud
+
+**✅ Solutions Applied:**
+1. **Enhanced requirements.txt**:
+   ```txt
+   streamlit>=1.28.0
+   python-pptx>=0.6.21
+   lxml>=4.9.0
+   Pillow>=9.0.0
+   ```
+
+2. **Fixed runtime.txt**:
+   ```txt
+   python-3.11
+   ```
+
+3. **Added packages.txt**:
+   ```txt
+   libxml2-dev
+   libxslt-dev
+   python3-dev
+   ```
+
+**🚀 Action Required:**
+- **If app already deployed**: Click "Reboot app" di Streamlit Cloud dashboard
+- **If new deployment**: Create new app dengan fixes di atas
+
+#### Alternative Fix: Force Reinstall
+Jika masih error, coba tambahkan ke requirements.txt:
+```txt
+streamlit>=1.28.0
+python-pptx==0.6.23
+lxml==4.9.3
+Pillow==10.0.0
+--upgrade-strategy eager
+```
 
 #### Error: "App crashed"
 - Check logs di Streamlit Cloud dashboard
